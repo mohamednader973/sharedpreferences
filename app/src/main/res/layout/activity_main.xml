@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/et1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="please enter your name"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="20sp"
+        android:textSize="20dp"
+        android:layout_marginTop="20sp"
+    />
+    <EditText
+        android:id="@+id/et2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="please enter your age"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/et1"
+        android:textSize="20dp"
+        android:layout_marginTop="30sp"
+     />
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@+id/et1"
+        app:layout_constraintTop_toTopOf="@id/et1"
+        app:layout_constraintBottom_toBottomOf="@id/et1"
+        android:text="test"
+        android:layout_marginStart="60sp"
+        android:layout_marginTop="5sp"
+    />
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@+id/et2"
+        app:layout_constraintTop_toTopOf="@id/et2"
+        app:layout_constraintBottom_toBottomOf="@id/et2"
+        android:text="test"
+        android:layout_marginStart="78sp"
+        android:layout_marginTop="5sp"
+        />
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="save"
+        app:layout_constraintStart_toStartOf="@id/et1"
+        app:layout_constraintTop_toBottomOf="@id/et2"
+        android:layout_marginTop="60sp"
+        android:layout_marginStart="30sp"
+        android:background="@android:color/holo_red_light"
+    />
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="show"
+        app:layout_constraintStart_toEndOf="@+id/btn1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et2"
+        android:layout_marginTop="60sp"
+        android:background="@color/colorAccent"
+     />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
